@@ -6,7 +6,7 @@ Professional portfolio for the Master of Science in Artificial Intelligence at I
 
 ## About me
 
-I am a Senior Data Scientist at CVS Health in Caremark's Pricing and Product Analytics team, where I build pricing and optimization models for pharmacy benefits. I hold a PhD in Systems Engineering from the University of Illinois Urbana-Champaign. Before CVS Health, I worked in data science at ComEd and as an aerospace engineer at the Indian Space Research Organisation (ISRO).
+I am a Senior Data Scientist at CVS Health in Caremark's Pricing and Product Analytics team, where I build pricing and optimization models for pharmacy benefits. I hold a PhD in Systems Engineering from the University of Illinois Urbana-Champaign. Before CVS Health, I was a Senior Data Scientist at ComEd, and earlier an aerospace engineer at the Indian Space Research Organisation (ISRO).
 
 **Value proposition:** I help healthcare and analytics teams turn complex, high-stakes data into AI and pricing decisions they can trust.
 
