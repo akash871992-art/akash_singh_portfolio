@@ -119,19 +119,19 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 .pillars h3 { margin-bottom: 6px; }
 .pillars p { font-size: 1rem; color: var(--muted); margin: 0; }
 
-/* Artifact list */
-.artifact-list { list-style: none; margin: 0; padding: 0; }
-.artifact-row { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 28px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: start; }
-.artifact-row:first-child { padding-top: 0; }
-.artifact-row img { border: 1px solid var(--rule); border-radius: 6px; }
-.artifact-row h3 { font-size: 1.4rem; margin: 2px 0 8px; }
-.artifact-row h3 a { color: var(--ink); text-decoration: none; }
-.artifact-row h3 a:hover { color: var(--steel); text-decoration: underline; }
-.artifact-row p { font-size: 1.02rem; }
+/* Project list */
+.project-list { list-style: none; margin: 0; padding: 0; }
+.project-row { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 28px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.project-row:first-child { padding-top: 0; }
+.project-row img { border: 1px solid var(--rule); border-radius: 6px; }
+.project-row h3 { font-size: 1.4rem; margin: 2px 0 8px; }
+.project-row h3 a { color: var(--ink); text-decoration: none; }
+.project-row h3 a:hover { color: var(--steel); text-decoration: underline; }
+.project-row p { font-size: 1.02rem; }
 .kind { font: 600 .85rem/1.3 var(--display); color: var(--saffron); }
 .links { display: flex; flex-wrap: wrap; gap: 10px 20px; font: 500 .95rem/1.3 var(--display); }
 .slot { color: var(--muted); font-size: 1rem; padding: 24px 0 0; }
-@media (max-width: 720px) { .artifact-row { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+@media (max-width: 720px) { .project-row { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 6px; font: 600 .95rem/1 var(--display); text-decoration: none; border: 1.5px solid var(--ink); color: var(--ink); background: transparent; }
@@ -142,7 +142,7 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 .btn.primary:hover { filter: brightness(1.06); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 
-/* Artifact pages */
+/* Project pages */
 .crumb { font: 500 .9rem/1.3 var(--display); color: var(--muted); padding-top: 32px; }
 .crumb a { color: var(--muted); }
 .art-head { padding: 20px 0 40px; border-bottom: 1px solid var(--rule); }
