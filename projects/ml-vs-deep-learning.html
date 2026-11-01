@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML vs Deep Learning Guide | Akash Singh</title>
+<meta name="description" content="Project: Machine learning versus deep learning, an analysis of churn prediction (SVM) and Face ID (CNN), turned into a one-page decision guide for analytics leaders.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2313233A'/%3E%3Cpath d='M6 24 C12 22 16 14 26 8' stroke='%23C8701A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23C8701A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Akash Singh</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../#about">About</a>
+      <a href="../#value">Value</a>
+      <a href="../#skills">Skills</a>
+      <a href="../#projects" aria-current="true">Projects</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="../#projects">Projects</a> / Project 3: ML vs deep learning</p>
+  <header class="art-head">
+    <h1>Machine learning or deep learning? A decision guide</h1>
+    <p class="lede">An analysis of when traditional machine learning or deep learning fits a real-world problem, turned into a one-page guide that analytics leaders can use at a project kickoff.</p>
+    <div class="meta">
+      <span><b>Course</b> AIML-500: AI Lab, Indiana Wesleyan University</span>
+      <span><b>Completed</b> October 29, 2026</span>
+      <span><b>Format</b> Report and one-page guide</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="../assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf">Download the decision guide (PDF)</a>
+      <a class="btn" href="../assets/files/Singh_Akash_ML_vs_Deep_Learning_Report.pdf">Download the full report (PDF)</a>
+    </div>
+  </header>
+
+  <div class="art-body">
+    <nav class="toc" aria-label="Project sections">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#tools">Tools and technologies</a></li>
+        <li><a href="#value-proposition">Value proposition</a></li>
+        <li><a href="#unique-value">Unique value</a></li>
+        <li><a href="#relevance">Relevance</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section class="part" id="introduction">
+        <h2>Introduction</h2>
+        <p>Choosing between traditional machine learning and deep learning is one of the first decisions in any AI project. Get it wrong and a team either spends months and a GPU budget on a model a simpler method would have matched, or forces a simple model onto data it cannot handle.</p>
+        <p>In this class activity I analyzed one example of each approach: <b>customer churn prediction with a support vector machine</b> and <b>facial recognition with a convolutional neural network</b>. For my portfolio I turned that analysis into a practical tool: a one-page guide of five questions that helps a project team make the call before any code is written.</p>
+      </section>
+
+      <section class="part" id="description">
+        <h2>Description</h2>
+        <p>The project has two deliverables, written for two audiences.</p>
+        <ul class="downloads">
+          <li><a href="../assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf">Decision guide for analytics leaders</a><span>PDF, one page: five questions, a rule of thumb, two worked examples</span></li>
+          <li><a href="../assets/files/Singh_Akash_ML_vs_Deep_Learning_Report.pdf">Full analysis report</a><span>PDF, 4 pages, APA format, six sources</span></li>
+        </ul>
+        <figure>
+          <a href="../assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf"><img src="../assets/img/ml-dl-guide.jpg" alt="One-page decision guide titled Machine learning or deep learning? It lists five questions (data type, known features, amount of labeled data, need to explain predictions, compute budget) with answers pointing toward traditional ML or deep learning, a three-part rule of thumb, worked examples for customer churn and Face ID, and a note on healthcare analytics." width="1100" height="1424" loading="lazy"></a>
+          <figcaption><b>The decision guide.</b> Select the image to open the printable PDF.</figcaption>
+        </figure>
+        <h3>The two examples, compared on the same factors</h3>
+        <div class="table-scroll">
+          <table>
+            <caption>Comparison summary from the report</caption>
+            <thead><tr><th>Factor</th><th>Customer churn (traditional ML)</th><th>Face ID (deep learning)</th></tr></thead>
+            <tbody>
+              <tr><td>Data type</td><td>Structured, tabular records</td><td>Unstructured images and depth maps</td></tr>
+              <tr><td>Features</td><td>Predefined by people who know the business</td><td>Learned automatically by the network</td></tr>
+              <tr><td>Data volume needed</td><td>Moderate</td><td>Very large</td></tr>
+              <tr><td>Computing cost</td><td>Low</td><td>High</td></tr>
+              <tr><td>Interpretability</td><td>High; supports business action</td><td>Low, but accuracy is the priority</td></tr>
+              <tr><td>Best fit because</td><td>The signal is already in known features</td><td>The patterns are too complex to define by hand</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="objective">
+        <h2>Objective</h2>
+        <p>The assignment asked me to choose one traditional ML example and one deep learning example, identify a real-world application of each and explain why the chosen approach fits and why the other does not. My own objectives were to:</p>
+        <ul>
+          <li>Understand the core difference between the two approaches: features engineered by people versus features learned from raw data.</li>
+          <li>Back each recommendation with published evidence rather than general claims.</li>
+          <li>Give non-specialists a quick, reliable way to make the same decision on their own projects.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="process">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><b>Review the options</b><span>The lesson offered spam detection, house price prediction and churn prediction for traditional ML, and image recognition, natural language processing and autonomous driving for deep learning.</span></li>
+          <li><b>Select the examples</b><span>I chose churn prediction because, like the pricing work I do, it runs on tabular business data where people must act on the results. I chose Face ID because it is widely used and well documented.</span></li>
+          <li><b>Research</b><span>I used a published comparison of churn classifiers, the original support vector machine paper, a NeurIPS study of deep learning on tabular data, the <i>Nature</i> review of deep learning and Apple's own Face ID documentation.</span></li>
+          <li><b>Analyze on common factors</b><span>I judged both examples on the same factors (data type, features, data volume, computing cost and interpretability) so the comparison is fair.</span></li>
+          <li><b>Write the report</b><span>For each example the report covers the real-world application, why the approach fits and why the opposite approach does not, followed by a comparison table.</span></li>
+          <li><b>Adapt it for the audience</b><span>I turned the five factors into five plain-language questions, added a rule of thumb and a healthcare example, and laid them out on a single printable page.</span></li>
+        </ol>
+
+        <h3>Challenges and solutions</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Challenge</th><th>How I solved it</th></tr></thead>
+            <tbody>
+              <tr><td>Avoiding the assumption that deep learning is always better</td><td>I used evidence that tree-based models still match or beat deep networks on medium-sized tabular data (Grinsztajn et al., 2022).</td></tr>
+              <tr><td>Comparing two very different problems fairly</td><td>I scored both on the same five factors and summarized them side by side.</td></tr>
+              <tr><td>Turning an academic paper into something a manager would use</td><td>I rewrote the factors as questions a team can answer in a meeting, with clear answers for each column.</td></tr>
+              <tr><td>Describing a proprietary system accurately</td><td>For Face ID I relied on Apple's published documentation and avoided details that could not be verified.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="tools">
+        <h2>Tools and technologies used</h2>
+        <dl class="tools">
+          <div><dt>Machine learning concepts</dt><dd>Support vector machines, convolutional neural networks, feature engineering and representation learning.</dd></div>
+          <div><dt>Academic literature</dt><dd>NeurIPS, <i>Nature</i>, <i>Machine Learning</i> and <i>Simulation Modelling Practice and Theory</i>.</dd></div>
+          <div><dt>Microsoft Word</dt><dd>The APA-format report.</dd></div>
+          <div><dt>HTML and CSS</dt><dd>The decision guide layout, exported to a print-ready PDF.</dd></div>
+          <div><dt>Claude (Anthropic)</dt><dd>Assisted with editing and with the layout of the decision guide.</dd></div>
+        </dl>
+      </section>
+
+      <section class="part" id="value-proposition">
+        <h2>Value proposition</h2>
+        <p class="vp">This project shows that I can choose the right AI method for a problem and explain that choice so business leaders can act on it.</p>
+        <p>Choosing the wrong method wastes budget and erodes trust in AI. The guide gives teams a repeatable way to avoid that, and the report shows the evidence behind it.</p>
+      </section>
+
+      <section class="part" id="unique-value">
+        <h2>Unique value</h2>
+        <ul>
+          <li><b>I have worked on both sides of the line.</b> My PhD research built neural-network models for materials simulation, and my work at CVS Health runs on tabular pricing data where interpretability matters. The guide reflects practice, not only theory.</li>
+          <li><b>It shows a different skill from my other projects.</b> Project 1 shows building and testing an AI tool, and Project 2 shows research and storytelling. This project shows technical judgment: matching a method to the data and the business need.</li>
+          <li><b>It is reusable.</b> The guide works for any new project, not just the two examples in the report.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="relevance">
+        <h2>Relevance</h2>
+        <p><b>For analytics and business leaders</b>, the guide helps set realistic scope and budget before a project starts, and it flags when a simpler, explainable model is the better investment.</p>
+        <p><b>For healthcare and other regulated industries</b>, it puts interpretability on the table early. Pricing and claims data are tabular and must be explained to stakeholders, so traditional ML is usually the right starting point. Medical images are where deep learning usually earns its cost.</p>
+        <p><b>For students and new practitioners</b>, it offers a simple mental model: if people can name the features, start with traditional ML; if the signal lives in raw images, audio or text, use deep learning.</p>
+        <div class="callout">
+          <p><b>Use it with your team.</b> Print the <a href="../assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf">decision guide</a>, answer the five questions together at your next project kickoff and record which column most answers fall into.</p>
+        </div>
+      </section>
+
+      <section class="part" id="references">
+        <h2>References</h2>
+        <ul class="refs">
+          <li>Apple Inc. (n.d.). <i>About Face ID advanced technology</i>. Apple Support. Retrieved October 29, 2026, from <a href="https://support.apple.com/en-us/102381">https://support.apple.com/en-us/102381</a></li>
+          <li>Cortes, C., &amp; Vapnik, V. (1995). Support-vector networks. <i>Machine Learning, 20</i>(3), 273–297. <a href="https://doi.org/10.1007/BF00994018">https://doi.org/10.1007/BF00994018</a></li>
+          <li>Grinsztajn, L., Oyallon, E., &amp; Varoquaux, G. (2022). Why do tree-based models still outperform deep learning on typical tabular data? <i>Advances in Neural Information Processing Systems, 35</i>. <a href="https://doi.org/10.48550/arXiv.2207.08815">https://doi.org/10.48550/arXiv.2207.08815</a></li>
+          <li>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <i>Nature, 521</i>(7553), 436–444. <a href="https://doi.org/10.1038/nature14539">https://doi.org/10.1038/nature14539</a></li>
+          <li>Vafeiadis, T., Diamantaras, K. I., Sarigiannidis, G., &amp; Chatzisavvas, K. C. (2015). A comparison of machine learning techniques for customer churn prediction. <i>Simulation Modelling Practice and Theory, 55</i>, 1–9. <a href="https://doi.org/10.1016/j.simpat.2015.03.003">https://doi.org/10.1016/j.simpat.2015.03.003</a></li>
+          <li>Verger, R. (2017, September 13). Apple's new Face ID system uses a sensing strategy that dates back decades. <i>Popular Science</i>. <a href="https://www.popsci.com/apple-face-ID/">https://www.popsci.com/apple-face-ID/</a></li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>&copy; 2026 Akash Singh. <a href="../">Back to portfolio home</a></p>
+    <p>AI use disclosure: I used Claude (Anthropic) as an assistant to help build and edit this site. The projects, design decisions, testing and conclusions are my own, and I checked the content against my original work and sources.</p>
+    <button class="theme-toggle" type="button" id="theme-toggle">Switch to dark theme</button>
+  </div>
+</footer>
+<script src="../assets/theme.js"></script>
+</body>
+</html>

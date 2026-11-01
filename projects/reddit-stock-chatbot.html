@@ -19,6 +19,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="../#about">About</a>
       <a href="../#value">Value</a>
+      <a href="../#skills">Skills</a>
       <a href="../#projects" aria-current="true">Projects</a>
       <a href="../#contact">Contact</a>
     </nav>
@@ -26,7 +27,7 @@
 </header>
 
 <main id="main" class="wrap">
-  <p class="crumb"><a href="../#projects">Projects</a> / AI Lab chatbot</p>
+  <p class="crumb"><a href="../#projects">Projects</a> / Project 1: AI Lab chatbot</p>
   <header class="art-head">
     <h1>Reddit Stock Trends Discussion chatbot</h1>
     <p class="lede">An educational chatbot that helps beginner investors understand why stocks trend on Reddit and what the risks are, built and tested with Design Thinking.</p>
@@ -149,6 +150,19 @@
           </table>
         </div>
         <p>Eight further scenarios (price predictions, live prices, leveraged products, account data, off-topic requests, unknown facts, jargon and a beginner path) are written and queued for a signed-in test round. The next version, 1.2, will make the disclaimer the first rule, since it was the one rule the bot still skipped.</p>
+
+        <h3>Challenges and solutions</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Challenge</th><th>How I solved it</th></tr></thead>
+            <tbody>
+              <tr><td>The free plan cannot load a knowledge file, so the bot answered from stale general knowledge</td><td>I wrote a dated fact snapshot directly into the instructions and required the bot to state the date of its data.</td></tr>
+              <tr><td>The basic model drifted from long, prose-style instructions</td><td>I rewrote the instructions as ten short, numbered rules the model could follow reliably.</td></tr>
+              <tr><td>The guest preview allows only three messages per session</td><td>I split testing into rounds of three scenarios and queued the remaining eight for a signed-in session.</td></tr>
+              <tr><td>Version 1.1 still skipped the closing disclaimer</td><td>I recorded it as an open issue; version 1.2 makes the disclaimer the first rule.</td></tr>
+            </tbody>
+          </table>
+        </div>
 
         <h3 id="screenshots">Test screenshots</h3>
         <div class="gallery">
