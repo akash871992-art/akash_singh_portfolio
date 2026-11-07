@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoSe2 Templating of Polyethylene | Akash Singh</title>
+<meta name="description" content="First-authored research by Akash Singh: a molecular dynamics study of how monolayer MoSe2 templates polyethylene crystallization, published in The Journal of Physical Chemistry C (2024).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2313233A'/%3E%3Cpath d='M6 24 C12 22 16 14 26 8' stroke='%23C8701A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23C8701A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261106">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Akash Singh</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../#about">About</a>
+      <a href="../#value">Value</a>
+      <a href="../#skills">Skills</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#research" aria-current="true">Research</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="../#research">Research</a> / MoSe<sub>2</sub> templating of polyethylene</p>
+  <header class="art-head">
+    <h1>Simulating how a 2D material templates plastic crystals</h1>
+    <p class="lede">First-authored, peer-reviewed research using all-atom molecular dynamics to show how a single layer of MoSe<sub>2</sub> starts and steers the crystallization of polyethylene.</p>
+    <div class="meta">
+      <span><b>Published</b> <i>The Journal of Physical Chemistry C</i>, 128(5), 2147–2162, February 2024</span>
+      <span><b>Authors</b> Akash Singh (first author), Mingyuan Sun, Jihua Chen, Bo Li, Yumeng Li</span>
+      <span><b>Collaboration</b> University of Illinois, Oak Ridge National Laboratory, Villanova University</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="https://doi.org/10.1021/acs.jpcc.3c06850" target="_blank" rel="noopener">View the published article</a>
+    </div>
+  </header>
+
+  <div class="art-body">
+    <nav class="toc" aria-label="Sections">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#tools">Tools and technologies</a></li>
+        <li><a href="#value-proposition">Value proposition</a></li>
+        <li><a href="#unique-value">Unique value</a></li>
+        <li><a href="#relevance">Relevance</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <div class="callout">
+        <p>This publication comes from my doctoral research at the University of Illinois, completed before the MS in Artificial Intelligence program. I include it to show my experience leading a simulation study. It is separate from my course projects.</p>
+      </div>
+
+      <section class="part" id="introduction">
+        <h2>Introduction</h2>
+        <p>Adding two-dimensional materials to plastics can make composites that are stronger and more functional, but their properties depend on how the polymer chains pack next to the 2D surface. That packing happens at the scale of individual atoms and in fractions of a microsecond, which is too small and too fast for experiments to watch directly.</p>
+        <p>This study used molecular dynamics simulation to watch it happen. It builds on our earlier experimental work in <a href="polyethylene-2d-edges.html"><i>Macromolecules</i></a>, which showed that MoSe<sub>2</sub> guides polyethylene crystallization, and asks how the flat surface of the material does it.</p>
+      </section>
+
+      <section class="part" id="description">
+        <h2>Description</h2>
+        <p>This work is a 16-page peer-reviewed article in <i>The Journal of Physical Chemistry C</i>. I led it as first author, with collaborators at Oak Ridge National Laboratory and Villanova University and my advisor, Professor Yumeng Li.</p>
+        <figure class="fig-narrow">
+          <img src="../assets/img/pe-templating.svg" alt="Side-view illustration. At the bottom, a MoSe2 layer is drawn as three rows of atoms. Just above it, rows of polymer chains drawn as orange zigzags lie flat and ordered. A dashed line marks the crystallization front, with an arrow showing it moving upward. Above the line, grey chains are tangled and disordered." width="800" height="600" loading="lazy">
+          <figcaption><b>The main finding.</b> Chains order first at the MoSe<sub>2</sub> surface, and the crystallization front (dashed line) moves quickly up into the disordered melt. My illustration, not a figure from the paper.</figcaption>
+        </figure>
+        <h3>Key findings</h3>
+        <ul>
+          <li><b>Crystals grow from the surface.</b> Crystallization begins at the MoSe<sub>2</sub> interface, and the crystallization front moves rapidly into the bulk polymer.</li>
+          <li><b>The surface sets the direction.</b> At equilibrium, the chains are orientationally registered to the 2D surface, meaning the surface determines which way they point.</li>
+          <li><b>Three forces explain why.</b> That alignment comes from a balance between the chains' conformational entropy, their adhesion to the surface and the surface's atomic-scale corrugation.</li>
+          <li><b>A design route for composites.</b> 2D materials like MoSe<sub>2</sub> could serve as templates for polymer nanocomposites with controlled crystal orientation.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="objective">
+        <h2>Objective</h2>
+        <p>The goal was to explain, at the atomic level, how a 2D material surface templates polymer crystallization. Specifically, the study set out to:</p>
+        <ul>
+          <li>Simulate polyethylene-like chains crystallizing on a MoSe<sub>2</sub> surface with an all-atom model.</li>
+          <li>Find where crystallization starts and how it spreads.</li>
+          <li>Identify the physical factors that decide how the chains align with the surface.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="process">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><b>Choose a model system</b><span>I used n-pentacosane, a 25-carbon alkane, as a stand-in for polyethylene. It keeps the essential chemistry while staying small enough to simulate in atomic detail.</span></li>
+          <li><b>Build the interface</b><span>I constructed all-atom models of the alkane chains on a monolayer MoSe<sub>2</sub> surface.</span></li>
+          <li><b>Simulate crystallization</b><span>I ran molecular dynamics simulations in LAMMPS to follow the chains as they assembled on the surface and crystallized.</span></li>
+          <li><b>Analyze order and orientation</b><span>I tracked where ordered regions formed, how the crystallization front moved and how the chains oriented relative to the surface.</span></li>
+          <li><b>Explain the mechanism</b><span>I traced the alignment to its physical causes and connected the results to the team's earlier experimental findings.</span></li>
+        </ol>
+
+        <h3>Challenges and solutions</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Challenge</th><th>How I solved it</th></tr></thead>
+            <tbody>
+              <tr><td>Full polyethylene chains are too long to simulate atom by atom at the time scales of crystallization</td><td>I used n-pentacosane as a surrogate, which keeps all-atom detail at the interface while staying computationally practical.</td></tr>
+              <tr><td>Crystallization at an interface is too small and fast for experiments to observe directly</td><td>The simulations followed every atom over time, revealing where order begins and how quickly it spreads.</td></tr>
+              <tr><td>Alignment could come from several competing effects</td><td>I separated the roles of chain entropy, surface adhesion and surface corrugation to explain the final orientation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="tools">
+        <h2>Tools and technologies used</h2>
+        <dl class="tools">
+          <div><dt>Molecular dynamics simulation</dt><dd>All-atom models of polymer chains on a 2D material surface.</dd></div>
+          <div><dt>LAMMPS</dt><dd>The open-source molecular dynamics engine used for the simulations.</dd></div>
+          <div><dt>Structural analysis</dt><dd>Measures of chain order, orientation and the moving crystallization front.</dd></div>
+          <div><dt>Statistical mechanics</dt><dd>Reasoning about entropy and adhesion to explain the alignment.</dd></div>
+        </dl>
+      </section>
+
+      <section class="part" id="value-proposition">
+        <h2>Value proposition</h2>
+        <p class="vp">This research shows that I can lead a complex computational study from design to publication and explain what drives the results.</p>
+        <p>Designing the model, choosing sensible simplifications and tracing outcomes to their causes are the same skills I use to build analytical models that decision makers can trust.</p>
+      </section>
+
+      <section class="part" id="unique-value">
+        <h2>Unique value</h2>
+        <ul>
+          <li><b>Leadership as first author.</b> I designed and ran the simulations, analyzed the results and led the writing.</li>
+          <li><b>Mechanism, not just observation.</b> The study explains why the chains align, separating three competing effects instead of only reporting that they align.</li>
+          <li><b>Simulation linked to experiment.</b> It extends our team's experimental findings, showing how simulation and experiment strengthen each other.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="relevance">
+        <h2>Relevance</h2>
+        <p><b>For materials and manufacturing</b>, it points to 2D materials as templates for designing polymer composites with controlled structure and properties.</p>
+        <p><b>For data science and AI teams</b>, it shows the value of a well-chosen surrogate. A smaller, faster model that keeps what matters can answer questions the full system cannot, an idea at the heart of machine learning surrogates such as my <a href="graphene-ml-potentials.html">graphene neural network potential</a>.</p>
+        <p><b>For research collaborators</b>, it shows that I can lead a study while working with national-laboratory and university partners.</p>
+      </section>
+
+      <section class="part" id="references">
+        <h2>References</h2>
+        <ul class="refs">
+          <li>Singh, A., Sun, M., Chen, J., Li, B., &amp; Li, Y. (2024). Templating effect of MoSe<sub>2</sub> on crystallization of polyethylene: A molecular dynamics simulation study. <i>The Journal of Physical Chemistry C, 128</i>(5), 2147–2162. <a href="https://doi.org/10.1021/acs.jpcc.3c06850">https://doi.org/10.1021/acs.jpcc.3c06850</a></li>
+          <li>Zhou, D., Fuentes-Cabrera, M., Singh, A., Unocic, R. R., Carrillo, J. M. Y., Xiao, K., Li, Y., &amp; Li, B. (2022). Atomic edge-guided polyethylene crystallization on monolayer two-dimensional materials. <i>Macromolecules, 55</i>(2), 559–567. <a href="https://doi.org/10.1021/acs.macromol.1c01978">https://doi.org/10.1021/acs.macromol.1c01978</a></li>
+          <li>Thompson, A. P., et al. (2022). LAMMPS: A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. <i>Computer Physics Communications, 271</i>, 108171. <a href="https://doi.org/10.1016/j.cpc.2021.108171">https://doi.org/10.1016/j.cpc.2021.108171</a></li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>&copy; 2026 Akash Singh. <a href="../">Back to portfolio home</a></p>
+    <p>AI use disclosure: I used Claude (Anthropic) as an assistant to help build and edit this site. The projects, research, design decisions and conclusions are my own, and I checked the content against my original work and sources.</p>
+    <button class="theme-toggle" type="button" id="theme-toggle">Switch to dark theme</button>
+  </div>
+</footer>
+<script src="../assets/theme.js?v=20261106"></script>
+</body>
+</html>

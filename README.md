@@ -27,6 +27,7 @@ Peer-reviewed work from my PhD at the University of Illinois, completed before t
 | Publication | Summary | Links |
 |---|---|---|
 | Reliable machine learning potentials based on artificial neural network for graphene (*Computational Materials Science*, 227, 2023) | A neural network interatomic potential trained on DFT data that enables large-scale molecular dynamics of graphene with near-quantum accuracy | [Summary page](https://akash871992-art.github.io/akash_singh_portfolio/projects/graphene-ml-potentials.html) · [Preprint](https://arxiv.org/abs/2306.07246) · [DOI](https://doi.org/10.1016/j.commatsci.2023.112272) |
+| Templating effect of MoSe2 on crystallization of polyethylene: A molecular dynamics simulation study (*The Journal of Physical Chemistry C*, 128(5), 2024; first author) | All-atom MD showing polyethylene crystallizes outward from a MoSe2 surface with chain orientation set by the substrate | [Summary page](https://akash871992-art.github.io/akash_singh_portfolio/projects/mose2-templating-polyethylene.html) · [DOI](https://doi.org/10.1021/acs.jpcc.3c06850) |
 | Atomic edge-guided polyethylene crystallization on monolayer two-dimensional materials (*Macromolecules*, 55(2), 2022; third author) | Experiments, ab initio calculations and molecular dynamics showing how MoSe2 edges guide polyethylene crystal alignment | [Summary page](https://akash871992-art.github.io/akash_singh_portfolio/projects/polyethylene-2d-edges.html) · [DOI](https://doi.org/10.1021/acs.macromol.1c01978) |
 
 Each project and research page follows the course template: title, introduction, description, objective, process, tools and technologies used, value proposition, unique value, relevance and references.
@@ -40,6 +41,7 @@ projects/
   seasons-of-ai.html               Project 2: AI and ML timeline
   ml-vs-deep-learning.html         Project 3: ML vs deep learning decision guide
   graphene-ml-potentials.html      Research: neural network potentials for graphene (PhD)
+  mose2-templating-polyethylene.html  Research: MoSe2 templating of polyethylene, MD study (PhD)
   polyethylene-2d-edges.html       Research: edge-guided polyethylene crystallization (PhD)
 assets/
   css/site.css                     Site styles (light and dark themes)
