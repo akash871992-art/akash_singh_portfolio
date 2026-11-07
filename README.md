@@ -20,16 +20,25 @@ Each project shows a different skill: building and testing an AI tool (1), resea
 | Seasons of AI | An interactive timeline and slide deck tracing AI history from 1943 to today through its summers and winters | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/seasons-of-ai.html) · [Live timeline](https://akash871992-art.github.io/season_of_ai/) |
 | Machine learning or deep learning? | An analysis of churn prediction (SVM) and Face ID (CNN), turned into a one-page decision guide for analytics leaders | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/ml-vs-deep-learning.html) · [Decision guide (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf) |
 
-Each project page follows the course template: title, introduction, description, objective, process, tools and technologies used, value proposition, unique value, relevance and references.
+## Research
+
+Peer-reviewed work from my PhD at the University of Illinois, completed before this program and separate from the course projects.
+
+| Publication | Summary | Links |
+|---|---|---|
+| Reliable machine learning potentials based on artificial neural network for graphene (*Computational Materials Science*, 227, 2023) | A neural network interatomic potential trained on DFT data that enables large-scale molecular dynamics of graphene with near-quantum accuracy | [Summary page](https://akash871992-art.github.io/akash_singh_portfolio/projects/graphene-ml-potentials.html) · [Preprint](https://arxiv.org/abs/2306.07246) · [DOI](https://doi.org/10.1016/j.commatsci.2023.112272) |
+
+Each project and research page follows the course template: title, introduction, description, objective, process, tools and technologies used, value proposition, unique value, relevance and references.
 
 ## Repository structure
 
 ```
-index.html                         Home: about me, value proposition, skills, projects, contact
+index.html                         Home: about me, value proposition, skills, projects, research, contact
 projects/
   reddit-stock-chatbot.html        Project 1: AI Lab chatbot
   seasons-of-ai.html               Project 2: AI and ML timeline
   ml-vs-deep-learning.html         Project 3: ML vs deep learning decision guide
+  graphene-ml-potentials.html      Research: neural network potentials for graphene (PhD)
 assets/
   css/site.css                     Site styles (light and dark themes)
   theme.js                         Theme toggle

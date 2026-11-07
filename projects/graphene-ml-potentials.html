@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural Network Potentials for Graphene | Akash Singh</title>
+<meta name="description" content="Peer-reviewed research by Akash Singh: an artificial neural network interatomic potential for graphene, published in Computational Materials Science (2023).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2313233A'/%3E%3Cpath d='M6 24 C12 22 16 14 26 8' stroke='%23C8701A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23C8701A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261106">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Akash Singh</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../#about">About</a>
+      <a href="../#value">Value</a>
+      <a href="../#skills">Skills</a>
+      <a href="../#projects">Projects</a>
+      <a href="../#research" aria-current="true">Research</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="../#research">Research</a> / Neural network potentials for graphene</p>
+  <header class="art-head">
+    <h1>Reliable machine learning potentials for graphene</h1>
+    <p class="lede">Peer-reviewed research from my PhD: a neural network that predicts the energy of carbon atoms in graphene with near-quantum accuracy, fast enough to simulate sheets of more than 12,000 atoms.</p>
+    <div class="meta">
+      <span><b>Published</b> <i>Computational Materials Science</i>, Vol. 227, August 2023</span>
+      <span><b>Authors</b> Akash Singh (first author), Yumeng Li</span>
+      <span><b>Institution</b> University of Illinois Urbana-Champaign</span>
+      <span><b>Citations</b> 40+ on Google Scholar</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="https://arxiv.org/abs/2306.07246" target="_blank" rel="noopener">Read the free preprint (arXiv)</a>
+      <a class="btn" href="https://doi.org/10.1016/j.commatsci.2023.112272" target="_blank" rel="noopener">View the published article</a>
+    </div>
+  </header>
+
+  <div class="art-body">
+    <nav class="toc" aria-label="Sections">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#tools">Tools and technologies</a></li>
+        <li><a href="#value-proposition">Value proposition</a></li>
+        <li><a href="#unique-value">Unique value</a></li>
+        <li><a href="#relevance">Relevance</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <div class="callout">
+        <p>This publication comes from my doctoral research at the University of Illinois, completed before the MS in Artificial Intelligence program. I include it to show the depth of my hands-on machine learning experience. It is separate from my course projects.</p>
+      </div>
+
+      <section class="part" id="introduction">
+        <h2>Introduction</h2>
+        <p>Graphene is a single layer of carbon atoms. It is one of the strongest materials ever measured and conducts heat and electricity exceptionally well, which makes it attractive for electronics, sensors and lightweight composites. Designing with it requires simulating how its atoms behave under heat and stress.</p>
+        <p>The two standard options each fall short. Quantum mechanical calculations based on density functional theory (DFT) are accurate but so expensive that they are limited to a few hundred atoms. Empirical models are fast but rely on hand-fitted equations that can miss real physics. This research closes that gap with machine learning: a neural network trained on DFT results that keeps most of the accuracy at a small fraction of the cost.</p>
+      </section>
+
+      <section class="part" id="description">
+        <h2>Description</h2>
+        <p>This work is a peer-reviewed journal article in <i>Computational Materials Science</i>, which I wrote as first author with my advisor, Professor Yumeng Li. It presents an artificial neural network (ANN) interatomic potential for single-layer graphene and uses it to run machine learning molecular dynamics simulations at a scale that DFT cannot reach.</p>
+        <figure class="fig-narrow">
+          <img src="../assets/img/graphene-lattice.svg" alt="Illustration of a graphene honeycomb lattice. One atom is highlighted in white, its neighbors inside a dashed circular cutoff radius are orange, and atoms outside are grey." width="800" height="600" loading="lazy">
+          <figcaption><b>The core idea.</b> The model describes each atom (white) by the arrangement of its neighbors inside a cutoff radius (dashed circle), then predicts that atom's energy. My illustration, not a figure from the paper.</figcaption>
+        </figure>
+        <h3>How the model works</h3>
+        <ol class="pipeline">
+          <li><b>Generate ground truth</b><span>320 DFT calculations on 24-atom graphene cells, stretched in the armchair and zigzag directions</span></li>
+          <li><b>Describe each atom</b><span>30 symmetry functions per atom summarize its neighborhood within 6.5 Å</span></li>
+          <li><b>Train the network</b><span>One small network per atom, two hidden layers of 10 neurons; atomic energies add up to the total</span></li>
+          <li><b>Simulate at scale</b><span>The trained model drives molecular dynamics on sheets of 12,400 atoms</span></li>
+          <li><b>Predict properties</b><span>Lattice spacing, thermal expansion, stiffness and strength from 125 K to 1,800 K</span></li>
+        </ol>
+
+        <h3>Key results compared with published values</h3>
+        <div class="table-scroll">
+          <table>
+            <caption>Model predictions against experiment and other methods</caption>
+            <thead><tr><th>Property</th><th>This model</th><th>Reference values</th></tr></thead>
+            <tbody>
+              <tr><td>Energy accuracy</td><td>About 5 meV per atom</td><td>Trained against DFT; under 3 meV per atom on 36 metastable structures</td></tr>
+              <tr><td>Lattice parameter</td><td>About 2.456 Å</td><td>2.454 to 2.469 Å from DFT; 2.418 Å from the AIREBO empirical potential</td></tr>
+              <tr><td>Young's modulus</td><td>975 ± 80 GPa, nearly constant from 300 to 1,800 K</td><td>1,000 ± 100 GPa measured experimentally (Lee et al., 2008)</td></tr>
+              <tr><td>Ultimate tensile strength</td><td>104.3 GPa at 300 K, falling to 84.9 GPa at 1,800 K</td><td>93.2 GPa at 300 K from earlier molecular dynamics studies</td></tr>
+              <tr><td>Thermal expansion</td><td>Changes from negative to positive near 375 K</td><td>Matches the sign change predicted by DFT, explained by out-of-plane rippling</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="objective">
+        <h2>Objective</h2>
+        <p>The research asked whether a neural network trained on a modest set of quantum calculations could reproduce graphene's real physical behavior reliably enough to replace DFT in large simulations. Specifically, I set out to:</p>
+        <ul>
+          <li>Build an ANN potential that matches DFT energies and forces.</li>
+          <li>Prove it is physically reliable, not just accurate on its training data.</li>
+          <li>Use it to study temperature effects in systems far larger than DFT can handle, including graphene's unusual thermal expansion.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="process">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><b>Data generation</b><span>I sampled graphene structures from simulations of the sheet being stretched in two directions, then calculated their energies with DFT in Quantum ESPRESSO.</span></li>
+          <li><b>Feature engineering</b><span>I converted each atom's surroundings into 30 Behler-type symmetry functions, which stay the same when the structure is rotated or shifted.</span></li>
+          <li><b>Model design and training</b><span>I trained a feedforward network in n2p2 on 90% of the data and held out 10% for testing, comparing two optimizers.</span></li>
+          <li><b>Validation</b><span>I checked predicted energies and forces against DFT, confirmed that energy is conserved during simulation and compared phonon dispersion with experimental measurements.</span></li>
+          <li><b>Large-scale simulation</b><span>I ran molecular dynamics in LAMMPS on a 12,400-atom sheet across a wide temperature range, with three independent runs per temperature.</span></li>
+          <li><b>Analysis and publication</b><span>I compared every predicted property with experimental, DFT and empirical results, explained the physics behind the trends and published the work after peer review.</span></li>
+        </ol>
+
+        <h3>Challenges and solutions</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Challenge</th><th>How I solved it</th></tr></thead>
+            <tbody>
+              <tr><td>Each DFT calculation is expensive, so training data was limited</td><td>I sampled stretched configurations that cover the range of atomic environments the model must handle, which kept the dataset to 320 structures.</td></tr>
+              <tr><td>Gradient descent trained slowly, reaching only about 115 meV per atom after 400 iterations</td><td>I switched to the Levenberg–Marquardt optimizer, which reached about 5 meV per atom in fewer than 50 iterations.</td></tr>
+              <tr><td>Early models predicted vibration (phonon) frequencies poorly</td><td>I increased the sample size and the cutoff radius from 4.5 to 6.5 Å until the predictions matched experiment.</td></tr>
+              <tr><td>A low error score does not prove a model behaves physically</td><td>I added energy-conservation tests, force-direction checks and comparisons with experimental data before using the model for predictions.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="tools">
+        <h2>Tools and technologies used</h2>
+        <dl class="tools">
+          <div><dt>Artificial neural networks</dt><dd>High-dimensional neural network potentials with tanh activations.</dd></div>
+          <div><dt>Behler-type symmetry functions</dt><dd>Rotation- and translation-invariant descriptors of each atom's environment.</dd></div>
+          <div><dt>Levenberg–Marquardt optimization</dt><dd>The training algorithm, chosen over gradient descent.</dd></div>
+          <div><dt>Quantum ESPRESSO</dt><dd>Density functional theory calculations for the training data.</dd></div>
+          <div><dt>n2p2</dt><dd>Neural network potential training and its interface to LAMMPS.</dd></div>
+          <div><dt>LAMMPS</dt><dd>Large-scale molecular dynamics simulations.</dd></div>
+        </dl>
+      </section>
+
+      <section class="part" id="value-proposition">
+        <h2>Value proposition</h2>
+        <p class="vp">This research shows that I can build, train and rigorously validate a neural network on complex scientific data, and carry the work through to peer-reviewed publication.</p>
+        <p>The same discipline applies to any high-stakes model: generate trustworthy training data, choose features carefully, test against reality and be clear about the limits.</p>
+      </section>
+
+      <section class="part" id="unique-value">
+        <h2>Unique value</h2>
+        <ul>
+          <li><b>End-to-end ownership.</b> I handled every stage, from generating the data to designing the features, training the model, validating it and publishing the findings.</li>
+          <li><b>Validation beyond accuracy scores.</b> I tested whether the model obeyed physical laws and matched experiments, not only whether its error was low. I bring that habit to every model I build.</li>
+          <li><b>Deep learning in practice.</b> This work grounds the guidance in my decision guide (Project 3): I have built neural networks where they fit and know what they cost.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="relevance">
+        <h2>Relevance</h2>
+        <p><b>For AI and engineering teams</b>, the core idea is a surrogate model: a fast machine learning model trained on a slow, expensive source of truth. The same pattern speeds up simulation and decision-making across engineering, energy and finance.</p>
+        <p><b>For healthcare analytics</b>, the lessons carry over directly: models are only as good as their training data, and they must be validated against real outcomes before anyone relies on them.</p>
+        <p><b>For materials researchers</b>, the method scales to other two-dimensional materials. The article has been cited more than 40 times on Google Scholar.</p>
+      </section>
+
+      <section class="part" id="references">
+        <h2>References</h2>
+        <ul class="refs">
+          <li>Singh, A., &amp; Li, Y. (2023). Reliable machine learning potentials based on artificial neural network for graphene. <i>Computational Materials Science, 227</i>, 112272. <a href="https://doi.org/10.1016/j.commatsci.2023.112272">https://doi.org/10.1016/j.commatsci.2023.112272</a> (Preprint: <a href="https://arxiv.org/abs/2306.07246">https://arxiv.org/abs/2306.07246</a>)</li>
+          <li>Behler, J., &amp; Parrinello, M. (2007). Generalized neural-network representation of high-dimensional potential-energy surfaces. <i>Physical Review Letters, 98</i>(14), 146401. <a href="https://doi.org/10.1103/PhysRevLett.98.146401">https://doi.org/10.1103/PhysRevLett.98.146401</a></li>
+          <li>Giannozzi, P., et al. (2009). QUANTUM ESPRESSO: A modular and open-source software project for quantum simulations of materials. <i>Journal of Physics: Condensed Matter, 21</i>(39), 395502. <a href="https://doi.org/10.1088/0953-8984/21/39/395502">https://doi.org/10.1088/0953-8984/21/39/395502</a></li>
+          <li>Lee, C., Wei, X., Kysar, J. W., &amp; Hone, J. (2008). Measurement of the elastic properties and intrinsic strength of monolayer graphene. <i>Science, 321</i>(5887), 385–388. <a href="https://doi.org/10.1126/science.1157996">https://doi.org/10.1126/science.1157996</a></li>
+          <li>Singraber, A., Behler, J., &amp; Dellago, C. (2019). Library-based LAMMPS implementation of high-dimensional neural network potentials. <i>Journal of Chemical Theory and Computation, 15</i>(3), 1827–1840. <a href="https://doi.org/10.1021/acs.jctc.8b00770">https://doi.org/10.1021/acs.jctc.8b00770</a></li>
+          <li>Thompson, A. P., et al. (2022). LAMMPS: A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. <i>Computer Physics Communications, 271</i>, 108171. <a href="https://doi.org/10.1016/j.cpc.2021.108171">https://doi.org/10.1016/j.cpc.2021.108171</a></li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>&copy; 2026 Akash Singh. <a href="../">Back to portfolio home</a></p>
+    <p>AI use disclosure: I used Claude (Anthropic) as an assistant to help build and edit this site. The projects, research, design decisions and conclusions are my own, and I checked the content against my original work and sources.</p>
+    <button class="theme-toggle" type="button" id="theme-toggle">Switch to dark theme</button>
+  </div>
+</footer>
+<script src="../assets/theme.js?v=20261106"></script>
+</body>
+</html>
