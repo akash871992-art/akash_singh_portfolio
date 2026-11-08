@@ -253,3 +253,5 @@ h3.sub + .skill-groups { margin-top: 0; }
 }
 .fig-narrow { max-width: 520px; }
 @media (max-width: 560px) { .site-nav { gap: 2px 16px; font-size: .9rem; } .site-nav a { padding: 6px 0; } }
+.facts.glance { margin: 0 0 48px; max-width: none; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.facts.glance dd a { overflow-wrap: anywhere; }
