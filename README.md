@@ -12,13 +12,14 @@ I am a Senior Data Scientist at CVS Health in Caremark's Pricing and Product Ana
 
 ## Projects
 
-Each project shows a different skill: building and testing an AI tool (1), research and storytelling for non-technical audiences (2), and technical judgment in choosing an AI method (3).
+Each project shows a different skill: building and testing an AI tool (1), research and storytelling for non-technical audiences (2), technical judgment in choosing an AI method (3), and business-case analysis of AI in industry (4).
 
 | Project | What it is | Links |
 |---|---|---|
 | Reddit Stock Trends Discussion chatbot | An educational Mizou chatbot built with Design Thinking that helps beginner investors discuss trending stocks critically, without giving buy or sell advice | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/reddit-stock-chatbot.html) · [Live bot](https://mizou.com/preview-bot?ID=164579) |
 | Seasons of AI | An interactive timeline and slide deck tracing AI history from 1943 to today through its summers and winters | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/seasons-of-ai.html) · [Live timeline](https://akash871992-art.github.io/season_of_ai/) |
 | Machine learning or deep learning? | An analysis of churn prediction (SVM) and Face ID (CNN), turned into a one-page decision guide for analytics leaders | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/ml-vs-deep-learning.html) · [Decision guide (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf) |
+| The business of imaging AI | My healthcare section of *Fieldnotes*, a four-author newsletter on AI in industry: who pays for imaging AI, what companies are buying and whether AI-assisted screening saves specialist time | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/fieldnotes-imaging-ai.html) · [Newsletter (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/Fieldnotes_AI_at_Work_November_2026.pdf) |
 
 ## Research
 
@@ -40,6 +41,7 @@ projects/
   reddit-stock-chatbot.html        Project 1: AI Lab chatbot
   seasons-of-ai.html               Project 2: AI and ML timeline
   ml-vs-deep-learning.html         Project 3: ML vs deep learning decision guide
+  fieldnotes-imaging-ai.html       Project 4: The business of imaging AI (Fieldnotes newsletter)
   graphene-ml-potentials.html      Research: neural network potentials for graphene (PhD)
   mose2-templating-polyethylene.html  Research: MoSe2 templating of polyethylene, MD study (PhD)
   polyethylene-2d-edges.html       Research: edge-guided polyethylene crystallization (PhD)
