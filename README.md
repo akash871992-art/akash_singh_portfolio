@@ -12,7 +12,7 @@ I am a Senior Data Scientist at CVS Health in Caremark's Pricing and Product Ana
 
 ## Projects
 
-Each project shows a different skill: building and testing an AI tool (1), research and storytelling for non-technical audiences (2), technical judgment in choosing an AI method (3), and business-case analysis of AI in industry (4).
+Each project shows a different skill: building and testing an AI tool (1), research and storytelling for non-technical audiences (2), technical judgment in choosing an AI method (3), business-case analysis of AI in industry (4), and responsible data preparation (5).
 
 | Project | What it is | Links |
 |---|---|---|
@@ -20,6 +20,7 @@ Each project shows a different skill: building and testing an AI tool (1), resea
 | Seasons of AI | An interactive timeline and slide deck tracing AI history from 1943 to today through its summers and winters | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/seasons-of-ai.html) · [Live timeline](https://akash871992-art.github.io/season_of_ai/) |
 | Machine learning or deep learning? | An analysis of churn prediction (SVM) and Face ID (CNN), turned into a one-page decision guide for analytics leaders | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/ml-vs-deep-learning.html) · [Decision guide (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/ML_vs_Deep_Learning_Decision_Guide.pdf) |
 | The business of imaging AI | My healthcare section of *Fieldnotes*, a four-author newsletter on AI in industry: who pays for imaging AI, what companies are buying and whether AI-assisted screening saves specialist time | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/fieldnotes-imaging-ai.html) · [Newsletter (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/Fieldnotes_AI_at_Work_November_2026.pdf) |
+| Data cleaning without hidden bias | A one-page checklist pairing nine data cleaning and bias risks with a control, a test and monitoring, built from course scenarios on reviews, hiring and hospital data | [Project page](https://akash871992-art.github.io/akash_singh_portfolio/projects/data-cleaning-bias-checklist.html) · [Checklist (PDF)](https://akash871992-art.github.io/akash_singh_portfolio/assets/files/Data_Cleaning_Bias_Checklist.pdf) |
 
 ## Research
 
@@ -42,6 +43,7 @@ projects/
   seasons-of-ai.html               Project 2: AI and ML timeline
   ml-vs-deep-learning.html         Project 3: ML vs deep learning decision guide
   fieldnotes-imaging-ai.html       Project 4: The business of imaging AI (Fieldnotes newsletter)
+  data-cleaning-bias-checklist.html  Project 5: Data cleaning without hidden bias checklist
   graphene-ml-potentials.html      Research: neural network potentials for graphene (PhD)
   mose2-templating-polyethylene.html  Research: MoSe2 templating of polyethylene, MD study (PhD)
   polyethylene-2d-edges.html       Research: edge-guided polyethylene crystallization (PhD)

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Cleaning Bias Checklist | Akash Singh</title>
+<meta name="description" content="Project 5: a one-page checklist that pairs each data cleaning and bias risk with a control, a test and ongoing monitoring, built from AIML-500 data preparation scenarios for healthcare and analytics teams.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2313233A'/%3E%3Cpath d='M6 24 C12 22 16 14 26 8' stroke='%23C8701A' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23C8701A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261118">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Akash Singh</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../#about">About</a>
+      <a href="../#value">Value</a>
+      <a href="../#skills">Skills</a>
+      <a href="../#projects" aria-current="true">Projects</a>
+      <a href="../#research">Research</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="../#projects">Projects</a> / Project 5: Data cleaning without hidden bias</p>
+  <header class="art-head">
+    <h1>Data cleaning without hidden bias</h1>
+    <p class="lede">A one-page checklist that helps healthcare and analytics teams prepare data for AI by pairing every cleaning and bias risk with a control, a test before launch and monitoring after launch.</p>
+    <div class="meta">
+      <span><b>Course</b> AIML-500: AI Lab, Indiana Wesleyan University</span>
+      <span><b>Completed</b> November 2026</span>
+      <span><b>Format</b> Printable checklist and project write-up</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="../assets/files/Data_Cleaning_Bias_Checklist.pdf">Download the checklist (PDF)</a>
+      <a class="btn" href="#description">See how it works</a>
+    </div>
+  </header>
+
+  <div class="art-body">
+    <nav class="toc" aria-label="Project sections">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#tools">Tools and technologies</a></li>
+        <li><a href="#value-proposition">Value proposition</a></li>
+        <li><a href="#unique-value">Unique value</a></li>
+        <li><a href="#relevance">Relevance</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <dl class="facts glance">
+        <div><dt>Title</dt><dd>Data cleaning without hidden bias</dd></div>
+        <div><dt>Artifact type</dt><dd>One-page risk-to-control checklist with project write-up</dd></div>
+        <div><dt>Coursework</dt><dd>AIML-500 Workshop 4: data preparation and bias activities</dd></div>
+        <div><dt>Audience</dt><dd>Healthcare leaders, data scientists and analytics teams</dd></div>
+        <div><dt>Skill shown</dt><dd>Responsible data preparation and bias risk control</dd></div>
+        <div><dt>Deliverable</dt><dd><a href="../assets/files/Data_Cleaning_Bias_Checklist.pdf">Checklist, PDF, 1 page</a></dd></div>
+      </dl>
+
+      <section class="part" id="introduction">
+        <h2>Introduction</h2>
+        <p>Data cleaning is usually described as removing wrong data. This course activity showed me it is more than that: every cleaning rule decides who is represented in a model. A rule that drops "messy" text can quietly remove an entire language group, and a model trained on biased labels can still score well if the same bias sits in its test data.</p>
+        <p>The activity walked through three scenarios: multilingual product reviews, a hiring model and a model shared across hospitals. For my portfolio, I turned the lessons into a practical checklist that a team can use before, during and after cleaning data for AI.</p>
+      </section>
+
+      <section class="part" id="description">
+        <h2>Description</h2>
+        <p>The deliverable is a printable, one-page checklist organized in three stages: cleaning, validation and deployment. Each of its nine risks is paired with a control that prevents it, a test to run before launch and a way to monitor it after launch.</p>
+        <figure>
+          <a href="../assets/files/Data_Cleaning_Bias_Checklist.pdf"><img src="../assets/img/data-cleaning-checklist.jpg" alt="One-page checklist titled Data cleaning without hidden bias. A four-column table lists Risk, Control, Test before launch and Monitor after launch, grouped into three stages: Cleaning (multilingual product reviews), Validation (a hiring model) and Deployment (a model shared across hospitals). Two notes at the bottom say what to agree before cleaning starts and what to ask before trusting a good score." width="1100" height="1424" loading="lazy"></a>
+          <figcaption><b>The checklist.</b> Select the image to open the printable PDF.</figcaption>
+        </figure>
+
+        <h3>The three scenarios and what each taught</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Scenario</th><th>Data risk</th><th>What I would do</th></tr></thead>
+            <tbody>
+              <tr><td>Multilingual product reviews</td><td>Cleaning rules could remove reviews from an entire language group without anyone noticing.</td><td>Count rows at every cleaning step, broken out by group, and question any rule that removes a whole group.</td></tr>
+              <tr><td>Hiring model</td><td>Past hiring decisions can carry bias into the labels. If the test data shares that bias, measured accuracy still looks good.</td><td>Check how the applicant population differs from the training data, gather local evidence before deployment and give human reviewers relevant information and clear criteria.</td></tr>
+              <tr><td>Model shared across hospitals</td><td>Merged data can use codes that mean different things, sharing too much puts privacy at risk, and one overall score can hide a hospital where the model performs poorly.</td><td>Share only the data needed, limit access, standardize codes and assess performance at each hospital separately.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>AI and data concepts applied</h3>
+        <ul>
+          <li><b>Data quality and preparation.</b> Cleaning rules, missing data, code standardization and documented exclusions.</li>
+          <li><b>Representation and label bias.</b> How cleaning and historical labels shape who a model learns from.</li>
+          <li><b>Model validation.</b> Why a biased model can pass testing, and why local and subgroup evaluation matters.</li>
+          <li><b>Distribution shift and monitoring.</b> Comparing training and deployment populations and watching for drift.</li>
+          <li><b>Privacy and human oversight.</b> Minimum necessary data sharing, access control and structured human review.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="objective">
+        <h2>Objective</h2>
+        <p>The course activity asked how data preparation choices can introduce or hide bias in AI systems. My objectives in turning it into a portfolio artifact were to:</p>
+        <ul>
+          <li>Show that data cleaning is a fairness decision, not only a technical one.</li>
+          <li>Turn three classroom scenarios into a tool that works for any AI project.</li>
+          <li>Make every safeguard concrete by stating exactly how it is tested and monitored.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="process">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><b>Work through the scenarios</b><span>I analyzed the product review, hiring and hospital cases in the course activity and noted where each data decision could exclude people or hide errors.</span></li>
+          <li><b>Revise my assumptions</b><span>I had assumed a biased model would fail on test data. I changed that view after seeing that shared bias in training and test data can make performance look good.</span></li>
+          <li><b>Draw on related coursework</b><span>I added healthcare strategies from my Workshop 4 work on bias, including label review, code consistency across hospitals and benchmarking each site.</span></li>
+          <li><b>Build the risk-to-control map</b><span>Following the next step I identified in the activity, I paired each risk with a control, a test and continuous monitoring.</span></li>
+          <li><b>Design for the audience</b><span>I grouped the nine risks into three stages, kept each scenario as a worked example and fit everything on one printable page.</span></li>
+          <li><b>Ground it in sources</b><span>I checked the guidance against published research on label bias and on bias in machine learning, and against the HIPAA minimum necessary standard.</span></li>
+        </ol>
+
+        <h3>Challenges and solutions</h3>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Challenge</th><th>How I solved it</th></tr></thead>
+            <tbody>
+              <tr><td>Cleaning metrics can look fine while a group disappears</td><td>I made row counts by group the first control, so losses show up at the step where they happen.</td></tr>
+              <tr><td>A biased model can still pass testing</td><td>I added independent local evaluation and subgroup error checks, so a good score is never the only evidence.</td></tr>
+              <tr><td>My first ideas for safeguards were general</td><td>I required every risk to have a specific test and a monitoring step, which turned principles into actions.</td></tr>
+              <tr><td>Nine risks and four columns on one page</td><td>I grouped the risks by stage, used each scenario as a short example and kept every cell to one action.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="part" id="tools">
+        <h2>Tools and technologies used</h2>
+        <dl class="tools">
+          <div><dt>Data profiling</dt><dd>Row counts and group proportions at each cleaning step.</dd></div>
+          <div><dt>Data dictionaries and code mapping</dt><dd>One standard code set across merged sources.</dd></div>
+          <div><dt>Subgroup and site-level evaluation</dt><dd>Error rates by patient group and hospital, not only overall accuracy.</dd></div>
+          <div><dt>Drift monitoring</dt><dd>Comparing deployment and training distributions over time.</dd></div>
+          <div><dt>Access control and data minimization</dt><dd>Role-based access and minimum necessary sharing.</dd></div>
+          <div><dt>HTML and CSS</dt><dd>The checklist layout, exported to a print-ready PDF.</dd></div>
+        </dl>
+      </section>
+
+      <section class="part" id="value-proposition">
+        <h2>Value proposition</h2>
+        <p class="vp">This project shows that I can prepare data for AI responsibly, catching quality and bias problems before they reach a model or a patient.</p>
+        <p>Most AI failures start in the data. A team that uses this checklist can show what it removed and why, prove the model works for every group and site, and keep checking after launch.</p>
+      </section>
+
+      <section class="part" id="unique-value">
+        <h2>Unique value</h2>
+        <ul>
+          <li><b>Practical data experience.</b> In pharmacy pricing I merge data from multiple sources every day, where a code that means different things in two systems can quietly distort results. That experience shaped the cleaning and validation controls.</li>
+          <li><b>A different skill from my other projects.</b> Projects 1 to 4 show building, storytelling, technical judgment and business analysis. This project shows responsible data preparation, the foundation every model depends on.</li>
+          <li><b>Actions, not principles.</b> Every risk comes with a concrete test and a monitoring step, so a team knows exactly what to do.</li>
+        </ul>
+      </section>
+
+      <section class="part" id="relevance">
+        <h2>Relevance</h2>
+        <p><b>For healthcare leaders</b>, it gives a quick way to ask the right questions before approving an AI tool, especially whether it works at every hospital and for every patient group.</p>
+        <p><b>For data scientists and analysts</b>, it is a working checklist for cleaning and validating data, with a written trail of what was removed and why.</p>
+        <p><b>For anyone deploying AI</b>, it is a reminder that a good overall score is the start of the evidence, not the end.</p>
+        <h3>Connection to course objectives</h3>
+        <ul>
+          <li><b>Applying AI concepts in real-world scenarios.</b> The checklist addresses reviews, hiring and hospital data, settings where data decisions affect real people.</li>
+          <li><b>Critically evaluating and selecting artifacts.</b> I chose this work because it adds data preparation and bias control, a competency my other projects do not show.</li>
+          <li><b>Customizing for an audience.</b> I expanded the classroom activity into a printable tool for healthcare and analytics teams.</li>
+          <li><b>Leading responsible change.</b> It supports the compassion, fairness and accountability I aim to bring as a healthcare leader.</li>
+        </ul>
+        <div class="callout">
+          <p><b>Use it on your next project.</b> Print the <a href="../assets/files/Data_Cleaning_Bias_Checklist.pdf">checklist</a>, assign an owner to each row and review it at three points: before cleaning, before launch and one month after launch.</p>
+        </div>
+      </section>
+
+      <section class="part" id="references">
+        <h2>References</h2>
+        <ul class="refs">
+          <li>Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., &amp; Galstyan, A. (2021). A survey on bias and fairness in machine learning. <i>ACM Computing Surveys, 54</i>(6), Article 115. <a href="https://doi.org/10.1145/3457607">https://doi.org/10.1145/3457607</a></li>
+          <li>Obermeyer, Z., Powers, B., Vogeli, C., &amp; Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. <i>Science, 366</i>(6464), 447–453. <a href="https://doi.org/10.1126/science.aax2342">https://doi.org/10.1126/science.aax2342</a></li>
+          <li>U.S. Department of Health and Human Services. (n.d.). <i>Minimum necessary requirement</i> (45 CFR 164.502(b)). <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html">https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html</a></li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>&copy; 2026 Akash Singh. <a href="../">Back to portfolio home</a></p>
+    <p>AI use disclosure: I used Claude (Anthropic) as an assistant to help build and edit this site. The projects, research, design decisions and conclusions are my own, and I checked the content against my original work and sources.</p>
+    <button class="theme-toggle" type="button" id="theme-toggle">Switch to dark theme</button>
+  </div>
+</footer>
+<script src="../assets/theme.js?v=20261118"></script>
+</body>
+</html>
